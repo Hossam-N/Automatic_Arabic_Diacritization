@@ -16,6 +16,17 @@ def clean_dataset(dataset, remove_diacritics=False):
     return dataset
 
 
+def split_arabic_sentences(text):
+   
+    pattern = r'(?<=[.؟!,؛])'
+
+    # Split the text into sentences based on the pattern
+    sentences = re.split(pattern, text)
+    # remove punctuations
+    sentences = [re.sub(r'[.؟!,؛]', '', sent) for sent in sentences]
+
+    return sentences   
+
 
 def read_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -35,6 +46,5 @@ def write_pickle(file_path, content):
 
     return   
 
-
-        
+     
     
