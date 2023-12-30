@@ -15,6 +15,10 @@ def clean_dataset(dataset, remove_diacritics=False):
     dataset = re.sub(r'\n+', '.', dataset)
     return dataset
 
+def append_to_file(file_path, content):
+    with open(file_path, 'a', encoding='utf-8') as file:
+        file.write(content + '\n')
+
 
 def split_arabic_sentences(text):
    
