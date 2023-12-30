@@ -24,6 +24,8 @@ def split_arabic_sentences(text):
     sentences = re.split(pattern, text)
     # remove punctuations
     sentences = [re.sub(r'[.؟!,؛]', '', sent) for sent in sentences]
+    # remove extra spaces
+    sentences = [re.sub(r'\s+', ' ', sent) for sent in sentences]
 
     return sentences   
 
