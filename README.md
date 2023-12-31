@@ -44,7 +44,7 @@ To set up the project environment, follow these steps:
 To diacritize Arabic words using the trained model, use the provided inference script. Here's an example:
 
 ```bash
-python diacritize.py --input "اللغة العربية صعبة"
+python diacritize.py --input "اللغة العربية جميلة"
 ```
 
 Replace the input text with the Arabic words you want to diacritize.
