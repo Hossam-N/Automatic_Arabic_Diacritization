@@ -3,6 +3,7 @@
 ## Overview
 
 This project aims to automatically add diacritics (short vowel marks) to Arabic words using a Bi-LSTM (Bidirectional Long Short-Term Memory) model implemented with PyTorch. Diacritization is a crucial task in Arabic natural language processing (NLP), as it helps improve the accuracy of various applications such as text-to-speech synthesis, machine translation, and information retrieval.
+We achieved an accuracy of 89.5% on the test set.
 
 ## Table of Contents
 
@@ -59,21 +60,11 @@ The diacritization model is based on a Bi-LSTM architecture implemented using Py
 
 ## Training
 
-To train the diacritization model, run the training script with your preferred configuration:
-
-```bash
-python train.py --epochs 10 --batch_size 64 --learning_rate 0.001
-```
-
-Adjust the hyperparameters as needed.
+To train the diacritization model, head to the preprocessing file and adjust the hyperparameters as needed.
 
 ## Evaluation
 
-Evaluate the model's performance on a separate test set using the evaluation script:
-
-```bash
-python evaluate.py --model_path models/best_model.pth --test_data data/test.txt
-```
+Evaluate the model's performance on a separate test set using the live demo.
 
 ## Results
 
